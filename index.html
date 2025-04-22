@@ -6,13 +6,13 @@
   <title>Pontes & Silva Direito Previdenciário - Especialistas em Direito Previdenciário</title>
   <meta name="description" content="Escritório especializado em direito previdenciário. Aposentadorias, auxílios, pensões, BPC/LOAS e revisões de benefícios.">
   <meta name="keywords" content="direito previdenciário, advogado previdenciário, aposentadoria, auxílio-doença, pensão por morte, BPC/LOAS, revisão de benefícios">
-  
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.pontessilvaprevidenciario.com.br/">
@@ -22,254 +22,249 @@
   <meta property="og:locale" content="pt_BR">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <img src="images/logo.png" alt="Pontes & Silva Direito Previdenciário" style="height: 60px;">
+
+<!-- Header -->
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <img src="images/logo.png" alt="Pontes & Silva Direito Previdenciário" style="height: 60px;">
+    </div>
+    <button class="mobile-menu-btn">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="https://wa.me/5521970920878" target="_blank">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background: linear-gradient(135deg, #1e3a8a, #2563eb); padding: 80px 0; color: white; text-align: center;">
+  <div class="container">
+    <h1 style="font-size: 3rem; margin-bottom: 20px;">Especialistas em Direito Previdenciário</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 30px;">Garantimos seus direitos junto ao INSS com atendimento personalizado e resultados comprovados.</p>
+    <a href="https://wa.me/5521970920878" target="_blank" rel="noopener noreferrer" 
+       style="background-color: #25d366; color: white; padding: 15px 30px; border-radius: 50px; font-size: 1.2rem; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+      💬 Agende uma Consulta Grátis
+    </a>
+  </div>
+</section>
+
+
+<!-- Serviços Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nossos Serviços</h2>
+      <p>Oferecemos assistência jurídica especializada em todas as áreas do Direito Previdenciário.</p>
+    </div>
+
+    <div class="services">
+      <!-- Serviços detalhados -->
+      <div class="service-card">
+        <div class="service-content">
+          <div class="service-icon">A</div>
+          <h3>Aposentadorias</h3>
+          <p>Orientação e representação para todos os tipos de aposentadoria: por idade, tempo de contribuição, especial e por invalidez.</p>
+        </div>
       </div>
-      <button class="mobile-menu-btn">☰</button>
-      <nav>
+
+      <div class="service-card">
+        <div class="service-content">
+          <div class="service-icon">B</div>
+          <h3>Auxílio-Doença</h3>
+          <p>Assistência jurídica para obtenção de benefícios por incapacidade temporária, incluindo perícias médicas e recursos administrativos.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-content">
+          <div class="service-icon">C</div>
+          <h3>Pensão por Morte</h3>
+          <p>Orientação para cônjuges, filhos e dependentes sobre o direito à pensão por morte, incluindo casos de união estável e dependência econômica.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top: 40px; text-align: center;">
+      <a href="servicos.html" class="btn-primary">Ver Todos os Serviços</a>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="section" style="background-color: #f5f8ff;">
+  <div class="container">
+    <div class="about">
+      <div class="about-content">
+        <h2>Sobre o Pontes & Silva Direito Previdenciário</h2>
+        <p>O escritório Pontes & Silva Direito Previdenciário foi fundado com a missão de garantir os direitos previdenciários dos cidadãos brasileiros, oferecendo atendimento personalizado e soluções jurídicas eficientes.</p>
+        <p>Nossa equipe é liderada pelas advogadas Dra. Amanda Pontes (OAB-RJ 241.725) e Dra. Juliana Silva, especialistas em Direito Previdenciário com vasta experiência na área.</p>
+        <p>Trabalhamos com dedicação e comprometimento para assegurar que nossos clientes recebam todos os benefícios a que têm direito, sempre com transparência e ética profissional.</p>
+        <a href="sobre.html" class="btn-primary">Conheça Nossa Equipe</a>
+      </div>
+      <div class="about-image">
+        <img src="images/logo.png" alt="Pontes & Silva Direito Previdenciário" style="max-width: 100%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Calculadora Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Calculadora de Aposentadoria</h2>
+      <p>Faça uma simulação rápida para saber quando você poderá se aposentar e qual será o valor aproximado do seu benefício.</p>
+    </div>
+
+    <div class="calculator">
+      <form id="calculator-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="birth-date">Data de Nascimento</label>
+            <input type="date" id="birth-date" name="birth-date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Sexo</label>
+            <select id="gender" name="gender" required>
+              <option value="">Selecione</option>
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contribution-time">Tempo de Contribuição (anos)</label>
+            <input type="number" id="contribution-time" name="contribution-time" min="0" max="50" required>
+          </div>
+
+          <div class="form-group">
+            <label for="monthly-income">Renda Mensal Atual (R$)</label>
+            <input type="number" id="monthly-income" name="monthly-income" min="0" step="0.01" required>
+          </div>
+        </div>
+
+        <button type="button" id="calc-button" class="btn-primary">Calcular</button>
+      </form>
+
+      <div id="calculator-result" class="calculator-result"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Nossa Equipe Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nossa Equipe</h2>
+      <p>Conheça as advogadas especialistas que compõem o escritório Pontes & Silva Direito Previdenciário.</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
+      <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
+        <img src="images/amanda.jpg" alt="Dra. Amanda Pontes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+        <h3>Dra. Amanda Pontes</h3>
+        <p>OAB-RJ 241.725</p>
+        <p>Especialista em Direito Previdenciário com vasta experiência em aposentadorias e benefícios por incapacidade.</p>
+      </div>
+
+      <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
+        <div style="width: 100%; height: 0; padding-bottom: 100%; background-color: #f5f8ff; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
+          <div style="position: absolute; font-size: 24px; color: #666;">Foto em breve</div>
+        </div>
+        <h3>Dra. Juliana Silva</h3>
+        <p>Advogada Previdenciarista</p>
+        <p>Especialista em revisões de benefícios e planejamento previdenciário, com foco em maximizar os direitos dos segurados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Pontes & Silva Direito Previdenciário</h3>
+        <p>Especialistas em direito previdenciário, comprometidos em garantir seus direitos junto ao INSS.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <ul>
+          <li>Telefone: (21) 97092-0878</li>
+          <li>Email: contato@pontessilvaadv.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links Rápidos</h3>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="https://wa.me/5521970920878" target="_blank">Contato</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Especialistas em Direito Previdenciário</h1>
-      <p>Garantimos seus direitos junto ao INSS com atendimento personalizado e resultados comprovados.</p>
-      <a href="contato.html" class="btn-secondary">Agende uma Consulta Gratuita</a>
-    </div>
-  </section>
-
-  <!-- Serviços Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos assistência jurídica especializada em todas as áreas do Direito Previdenciário.</p>
       </div>
-      
-      <div class="services">
-        <div class="service-card">
-          <div class="service-content">
-            <div class="service-icon">A</div>
-            <h3>Aposentadorias</h3>
-            <p>Orientação e representação para todos os tipos de aposentadoria: por idade, tempo de contribuição, especial e por invalidez.</p>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-content">
-            <div class="service-icon">B</div>
-            <h3>Auxílio-Doença</h3>
-            <p>Assistência jurídica para obtenção de benefícios por incapacidade temporária, incluindo perícias médicas e recursos administrativos.</p>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-content">
-            <div class="service-icon">C</div>
-            <h3>Pensão por Morte</h3>
-            <p>Orientação para cônjuges, filhos e dependentes sobre o direito à pensão por morte, incluindo casos de união estável e dependência econômica.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="text-center" style="margin-top: 40px; text-align: center;">
-        <a href="servicos.html" class="btn-primary">Ver Todos os Serviços</a>
+
+      <div class="footer-column">
+        <h3>Horário de Atendimento</h3>
+        <p>Segunda a Sexta: 9h às 18h</p>
       </div>
     </div>
-  </section>
 
-  <!-- Sobre Section -->
-  <section class="section" style="background-color: #f5f8ff;">
-    <div class="container">
-      <div class="about">
-        <div class="about-content">
-          <h2>Sobre o Pontes & Silva Direito Previdenciário</h2>
-          <p>O escritório Pontes & Silva Direito Previdenciário foi fundado com a missão de garantir os direitos previdenciários dos cidadãos brasileiros, oferecendo atendimento personalizado e soluções jurídicas eficientes.</p>
-          <p>Nossa equipe é liderada pelas advogadas Dra. Amanda Pontes (OAB-RJ 241.725) e Dra. Juliana Silva, especialistas em Direito Previdenciário com vasta experiência na área.</p>
-          <p>Trabalhamos com dedicação e comprometimento para assegurar que nossos clientes recebam todos os benefícios a que têm direito, sempre com transparência e ética profissional.</p>
-          <a href="sobre.html" class="btn-primary">Conheça Nossa Equipe</a>
-        </div>
-        <div class="about-image">
-          <img src="images/logo.png" alt="Pontes & Silva Direito Previdenciário" style="max-width: 100%;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Calculadora Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Calculadora de Aposentadoria</h2>
-        <p>Faça uma simulação rápida para saber quando você poderá se aposentar e qual será o valor aproximado do seu benefício.</p>
-      </div>
-      
-      <div class="calculator">
-        <form id="calculator-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="birth-date">Data de Nascimento</label>
-              <input type="date" id="birth-date" name="birth-date" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="gender">Sexo</label>
-              <select id="gender" name="gender" required>
-                <option value="">Selecione</option>
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="form-row">
-            <div class="form-group">
-              <label for="contribution-time">Tempo de Contribuição (anos)</label>
-              <input type="number" id="contribution-time" name="contribution-time" min="0" max="50" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="monthly-income">Renda Mensal Atual (R$)</label>
-              <input type="number" id="monthly-income" name="monthly-income" min="0" step="0.01" required>
-            </div>
-          </div>
-          
-          <button type="button" id="calc-button" class="btn-primary">Calcular</button>
-        </form>
-        
-        <div id="calculator-result" class="calculator-result"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <h2>Pronto para Garantir Seus Direitos?</h2>
-      <p>Entre em contato conosco hoje mesmo para uma análise gratuita do seu caso. Estamos prontos para ajudar você a garantir seus direitos previdenciários.</p>
-      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="tel:+5521991159686" class="btn-secondary">Ligar Agora</a>
-        <a href="https://wa.me/5521991159686" target="_blank" class="btn-secondary" style="background-color: #25d366; color: white; border: none;">WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Nossa Equipe Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Nossa Equipe</h2>
-        <p>Conheça as advogadas especialistas que compõem o escritório Pontes & Silva Direito Previdenciário.</p>
-      </div>
-      
-      <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
-        <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
-          <img src="images/amanda.jpg" alt="Dra. Amanda Pontes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
-          <h3>Dra. Amanda Pontes</h3>
-          <p>OAB-RJ 241.725</p>
-          <p>Especialista em Direito Previdenciário com vasta experiência em aposentadorias e benefícios por incapacidade.</p>
-        </div>
-        
-        <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
-          <div style="width: 100%; height: 0; padding-bottom: 100%; background-color: #f5f8ff; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-            <div style="position: absolute; font-size: 24px; color: #666;">Foto em breve</div>
-          </div>
-          <h3>Dra. Juliana Silva</h3>
-          <p>Advogada Previdenciarista</p>
-          <p>Especialista em revisões de benefícios e planejamento previdenciário, com foco em maximizar os direitos dos segurados.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>Pontes & Silva Direito Previdenciário</h3>
-          <p>Especialistas em direito previdenciário, comprometidos em garantir seus direitos junto ao INSS.</p>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Contato</h3>
-          <ul>
-            <li>Telefone: (21) 99115-9686</li>
-            <li>Email: contato@pontessilvaprevidenciario.com.br</li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Links Rápidos</h3>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h3>Horário de Atendimento</h3>
-          <p>Segunda a Sexta: 9h às 18h</p>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Pontes & Silva Direito Previdenciário. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/5521991159686" class="whatsapp-button" target="_blank">
-    <span>💬</span>
-  </a>
-
-  <!-- Popup de Captura de Email -->
-  <div class="popup-overlay">
-    <div class="popup-container">
-      <button class="popup-close">&times;</button>
-      <div class="popup-title">
-        <h3>Guia Gratuito: Direitos Previdenciários</h3>
-        <p>Receba nosso guia completo sobre direitos previdenciários e descubra como garantir seus benefícios.</p>
-      </div>
-      <form id="email-capture-form">
-        <div class="form-group">
-          <label for="popup-nome">Nome</label>
-          <input type="text" id="popup-nome" name="nome" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="popup-email">E-mail</label>
-          <input type="email" id="popup-email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="popup-telefone">WhatsApp (opcional)</label>
-          <input type="tel" id="popup-telefone" name="telefone">
-        </div>
-        
-        <button type="submit" class="btn-primary" style="width: 100%;">Receber Guia Gratuito</button>
-      </form>
-      <p style="font-size: 12px; color: #666; margin-top: 15px; text-align: center;">
-        Ao se cadastrar, você concorda com nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.
-      </p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pontes & Silva Direito Previdenciário. Todos os direitos reservados.</p>
     </div>
   </div>
+</footer>
 
-  <!-- JavaScript -->
-  <script src="js/scripts.js"></script>
+<!-- WhatsApp Button -->
+<a href="https://wa.me/5521970920878" class="whatsapp-button" target="_blank">
+  <span>💬</span>
+</a>
+
+<!-- Popup de Captura de Email -->
+<div class="popup-overlay">
+  <div class="popup-container">
+    <button class="popup-close">&times;</button>
+    <div class="popup-title">
+      <h3>Guia Gratuito: Direitos Previdenciários</h3>
+      <p>Receba nosso guia completo sobre direitos previdenciários e descubra como garantir seus benefícios.</p>
+    </div>
+    <form id="email-capture-form">
+      <div class="form-group">
+        <label for="popup-nome">Nome</label>
+        <input type="text" id="popup-nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="popup-email">E-mail</label>
+        <input type="email" id="popup-email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="popup-telefone">WhatsApp (opcional)</label>
+        <input type="tel" id="popup-telefone" name="telefone">
+      </div>
+
+      <button type="submit" class="btn-primary" style="width: 100%;">Receber Guia Gratuito</button>
+    </form>
+    <p style="font-size: 12px; color: #666; margin-top: 15px; text-align: center;">
+      Ao se cadastrar, você concorda com nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+    </p>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="js/scripts.js"></script>
+
 </body>
 </html>

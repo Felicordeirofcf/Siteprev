@@ -1,0 +1,504 @@
+/* Reset e estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #1a365d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: white;
+  color: #1a365d;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: 1px solid #1a365d;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1a365d, #2563eb);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a365d, #2563eb);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* Serviços */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #1a365d;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-content {
+  padding: 25px;
+}
+
+.service-content h3 {
+  font-size: 22px;
+  color: #1a365d;
+  margin-bottom: 15px;
+}
+
+.service-icon {
+  background-color: #e6f0ff;
+  color: #2563eb;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Sobre */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #1a365d;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(to right, #1a365d, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* Formulário de Contato */
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* FAQ */
+.faq-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #1a365d;
+  color: white;
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Popup de Captura de Email */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.popup-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-title h3 {
+  font-size: 24px;
+  color: #1a365d;
+}
+
+/* Calculadora de Aposentadoria */
+.calculator {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h3 {
+  font-size: 24px;
+  color: #1a365d;
+  margin-bottom: 20px;
+}
+
+.calculator-result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e6f0ff;
+  border-radius: 5px;
+  display: none;
+}
+
+.calculator-result.active {
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-content {
+    position: relative;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1a365d;
+    padding: 20px;
+    display: none;
+  }
+  
+  nav.active {
+    display: block;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .about {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+}

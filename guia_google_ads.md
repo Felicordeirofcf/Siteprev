@@ -37,12 +37,12 @@ A tag do Google Ads já está instalada no seu site. Você pode verificar nos ar
 
 ```html
 <!-- Google Ads Tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482096216"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-T686324P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'AW-11482096216');
+  gtag('config', 'GTM-T686324P');
 </script>
 ```
 
@@ -95,17 +95,17 @@ Substitua o código `COLOQUE_SEU_LABEL` nos arquivos HTML pelos códigos de even
 
 1. Para o botão de WhatsApp:
 ```javascript
-gtag('event', 'conversion', {'send_to': 'AW-11482096216/LABEL_WHATSAPP'});
+gtag('event', 'conversion', {'send_to': 'GTM-T686324P/LABEL_WHATSAPP'});
 ```
 
 2. Para o formulário de contato:
 ```javascript
-gtag('event', 'conversion', {'send_to': 'AW-11482096216/LABEL_FORMULARIO'});
+gtag('event', 'conversion', {'send_to': 'GTM-T686324P/LABEL_FORMULARIO'});
 ```
 
 3. Para a visualização da página de serviços:
 ```javascript
-gtag('event', 'conversion', {'send_to': 'AW-11482096216/LABEL_SERVICOS'});
+gtag('event', 'conversion', {'send_to': 'GTM-T686324P/LABEL_SERVICOS'});
 ```
 
 ### Passo 4: Verificar as conversões

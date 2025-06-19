@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('calculator-result').innerHTML = result;
       
       // Evento de conversão para Google Ads
-      gtag('event', 'conversion', {'send_to': 'AW-11482096216/COLOQUE_SEU_LABEL'});
+      gtag('event', 'conversion', {'send_to': 'GTM-T686324P/COLOQUE_SEU_LABEL'});
       
       // Evento de conversão para Meta Pixel
       fbq('track', 'Lead');
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       
       // Evento de conversão para Google Ads
-      gtag('event', 'conversion', {'send_to': 'AW-11482096216/COLOQUE_SEU_LABEL'});
+      gtag('event', 'conversion', {'send_to': 'GTM-T686324P/COLOQUE_SEU_LABEL'});
       
       // Evento de conversão para Meta Pixel
       fbq('track', 'Lead');
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
       contactForm.reset();
       
       // Evento de conversão para Google Ads
-      gtag('event', 'conversion', {'send_to': 'AW-11482096216/COLOQUE_SEU_LABEL'});
+      gtag('event', 'conversion', {'send_to': 'GTM-T686324P/COLOQUE_SEU_LABEL'});
       
       // Evento de conversão para Meta Pixel
       fbq('track', 'Lead');

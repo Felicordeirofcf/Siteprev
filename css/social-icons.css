@@ -1,0 +1,65 @@
+/* Estilos para ícones de redes sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f5f8ff;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook-icon:hover {
+  background-color: #e6f0ff;
+}
+
+.instagram-icon:hover {
+  background: linear-gradient(45deg, rgba(255,220,128,0.2), rgba(224,53,102,0.2), rgba(88,81,219,0.2));
+}
+
+/* Estilos para ícones de redes sociais no footer */
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #1a365d;
+  transition: all 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  transform: translateY(-2px);
+  background-color: #2563eb;
+}
+
+.footer-social-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+

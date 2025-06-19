@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // Substitua 'YOUR_PIXEL_ID' pelo seu ID de Pixel
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent'); // Evento ViewContent para a página de serviços
+  </script>
+  <noscript><img height='1' width='1' style='display:none'
+    src='https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1'
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serviços - Pontes & Silva Direito Previdenciário</title>
@@ -12,6 +31,7 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/social-icons.css">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -289,36 +309,38 @@
       <h2>Precisa de Ajuda com Benefícios Previdenciários?</h2>
       <p>Entre em contato conosco hoje mesmo para uma análise gratuita do seu caso. Estamos prontos para ajudar você a garantir seus direitos previdenciários.</p>
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="contato.html" class="btn-secondary">Agendar Consulta</a>
-        <a href="https://wa.me/5521991159686" target="_blank" class="btn-secondary" style="background-color: #25d366; color: white; border: none;">WhatsApp</a>
+        <a href="contato.html" class="btn-secondary" onclick="fbq('track', 'Lead');">Agendar Consulta</a>
+        <a href="https://wa.me/5521970920878" target="_blank" class="btn-secondary" style="background-color: #25d366; color: white; border: none;" onclick="fbq('track', 'Lead');">WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- Nossa Equipe Section -->
-  <section class="section">
+  <!-- Redes Sociais Section -->
+  <section class="section" style="background-color: #f5f8ff; padding: 60px 0;">
     <div class="container">
       <div class="section-title">
-        <h2>Nossa Equipe</h2>
-        <p>Conheça as advogadas especialistas que compõem o escritório Pontes & Silva Direito Previdenciário.</p>
+        <h2>Siga-nos nas Redes Sociais</h2>
+        <p>Acompanhe nosso conteúdo e fique por dentro das novidades sobre direito previdenciário.</p>
       </div>
       
-      <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
-        <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
-          <img src="images/amanda.jpg" alt="Dra. Amanda Pontes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
-          <h3>Dra. Amanda Pontes</h3>
-          <p>OAB-RJ 241.725</p>
-          <p>Especialista em Direito Previdenciário com vasta experiência em aposentadorias e benefícios por incapacidade.</p>
-        </div>
-        
-        <div style="flex: 1; min-width: 300px; max-width: 400px; text-align: center;">
-          <div style="width: 100%; height: 0; padding-bottom: 100%; background-color: #f5f8ff; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-            <div style="position: absolute; font-size: 24px; color: #666;">Foto em breve</div>
+      <div style="display: flex; justify-content: center; gap: 30px; margin-top: 40px;">
+        <a href="https://www.facebook.com/pontessilvaprevidenciario" target="_blank" style="text-decoration: none;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="social-icon facebook-icon" style="width: 80px; height: 80px;" onclick="fbq('track', 'ViewContent');">
+              <img src="images/facebook_icon.png" alt="Facebook" style="width: 50px; height: 50px;">
+            </div>
+            <p style="color: #1a365d; font-weight: bold;">Facebook</p>
           </div>
-          <h3>Dra. Juliana Silva</h3>
-          <p>Advogada Previdenciarista</p>
-          <p>Especialista em revisões de benefícios e planejamento previdenciário, com foco em maximizar os direitos dos segurados.</p>
-        </div>
+        </a>
+        
+        <a href="https://www.instagram.com/pontessilvaprevidenciario" target="_blank" style="text-decoration: none;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="social-icon instagram-icon" style="width: 80px; height: 80px;" onclick="fbq('track', 'ViewContent');">
+              <img src="images/instagram_icon.png" alt="Instagram" style="width: 50px; height: 50px;">
+            </div>
+            <p style="color: #1a365d; font-weight: bold;">Instagram</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -331,15 +353,15 @@
           <h3>Pontes & Silva Direito Previdenciário</h3>
           <p>Especialistas em direito previdenciário, comprometidos em garantir seus direitos junto ao INSS.</p>
         </div>
-        
+
         <div class="footer-column">
           <h3>Contato</h3>
           <ul>
-            <li>Telefone: (21) 99115-9686</li>
-            <li>Email: contato@pontessilvaprevidenciario.com.br</li>
+            <li>Telefone: (21) 97092-0878</li>
+            <li>Email: contato@pontessilvaadv.com</li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
           <h3>Links Rápidos</h3>
           <ul>
@@ -349,13 +371,22 @@
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
           <h3>Horário de Atendimento</h3>
           <p>Segunda a Sexta: 9h às 18h</p>
+          <h3 style="margin-top: 20px;">Redes Sociais</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/pontessilvaprevidenciario" target="_blank" class="social-icon facebook-icon" onclick="fbq('track', 'ViewContent');">
+              <img src="images/facebook_icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/pontessilvaprevidenciario" target="_blank" class="social-icon instagram-icon" onclick="fbq('track', 'ViewContent');">
+              <img src="images/instagram_icon.png" alt="Instagram">
+            </a>
+          </div>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>&copy; 2025 Pontes & Silva Direito Previdenciário. Todos os direitos reservados.</p>
       </div>
@@ -363,11 +394,13 @@
   </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/5521991159686" class="whatsapp-button" target="_blank">
+  <a href="https://wa.me/5521970920878" class="whatsapp-button" target="_blank" onclick="fbq('track', 'Lead');">
     <span>💬</span>
   </a>
 
   <!-- JavaScript -->
   <script src="js/scripts.js"></script>
+
 </body>
 </html>
+

@@ -138,6 +138,27 @@ Você tem três opções para verificar seu domínio:
 
 ## Configuração do Meta Pixel
 
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '600550295969161');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=600550295969161&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 ### Passo 1: Criar um Pixel
 1. No Business Manager, vá para "Todos os ferramentas" > "Eventos Manager"
 2. Clique em "Adicionar" > "Adicionar pixel"
@@ -148,7 +169,7 @@ Você tem três opções para verificar seu domínio:
 ### Passo 2: Instalar o código do Pixel
 1. Selecione "Instalar código manualmente"
 2. Copie o código base do pixel
-3. Substitua o código `YOUR_PIXEL_ID` no arquivo index.html, servicos.html, sobre.html e contato.html pelo ID do seu pixel
+3. Substitua o código `600550295969161` no arquivo index.html, servicos.html, sobre.html e contato.html pelo ID do seu pixel
 4. Clique em "Continuar"
 
 ### Passo 3: Verificar a instalação
